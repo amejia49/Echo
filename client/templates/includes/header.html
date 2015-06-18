@@ -1,0 +1,13 @@
+<template name="header">
+	<nav>
+		<div class="nav-wrapper">
+	    	<a href="#" class="brand-logo">Logo</a>
+	    	<div class= "container">
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				{{#if currentUser}}<li id="friends">Friends </li> {{/if}}
+		        <li>{{> loginButtons}}</li>
+	      	</ul>
+	      </div>
+	    </div>
+	</nav>
+</template>

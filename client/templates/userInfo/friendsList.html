@@ -1,0 +1,17 @@
+<template name="friendsList">
+	<form> <input type ="text" id="searchForUser" placeholder="Search For Friends"/> </form>
+	
+	{{#if friendRequest}}
+		<h3> Friend requests are</h3>		
+		<ul class="collection">
+			{{#each friendRequest}}
+				<li class="collection-item avatar">
+		      		<img src="images/yuna.jpg" alt="" class="circle">
+		     		<span class="title">{{user1name}}</span>
+		     		<button id="acceptFriendRequestBut"> Accept </button>
+				</li> {{/each}}
+		</ul>
+	{{/if}}
+	{{#each user}}<h1>{{username}}</h1> 
+	<button id="sendFriendRequestBut"> Send Friend Request </button> {{/each}}
+</template>
