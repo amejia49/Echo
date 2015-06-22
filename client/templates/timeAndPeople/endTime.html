@@ -1,0 +1,22 @@
+<template name = "endTime">
+	<h1> End Time </h1>
+
+	<div class="row">
+	    <form class="col s12">
+	        <div class="row">
+	        	<div class="input-field col s5" style="padding-left:250px;">
+	          		<input id="hour" type="number" class="validate" style="font-size: 100px; height:300px;">
+	          		<label for="hour">Hour</label>
+	        	</div>
+		        <div class="input-field col s2" style="margin-top: 100px;">
+		        	<h4> : </h4>
+		        </div>
+	        	<div class="input-field col s5" style="padding-right:200px;">
+	          		<input id="minute" type="number" min="0" max="59" class="validate" style="font-size: 100px; height:300px;">
+	          		<label for="minute">Minutes</label>
+	        	</div>
+	    	</div>  		
+  		<button class="btn waves-effect waves-light" type="submit" id="pm" name="action">submit <i class="fa fa-play right"></i></button>
+		</form>
+  </div>
+</template>

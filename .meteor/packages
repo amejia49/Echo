@@ -10,3 +10,12 @@ accounts-password
 accounts-ui
 iron:router
 materialize:materialize
+sacha:spin
+trepafi:mapbox
+percolate:synced-cron
+fortawesome:fontawesome
+jquery
+rcy:nouislider
+http
+momentjs:moment
+aldeed:geocoder

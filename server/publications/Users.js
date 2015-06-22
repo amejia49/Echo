@@ -10,3 +10,7 @@ Meteor.publish("notifications", function() {
 
 	return Notifications.find({status:"pending"});
 });
+
+Meteor.publish("messages", function() {
+	return Messages.find({});
+})

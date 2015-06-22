@@ -1,0 +1,33 @@
+<template name="selectPeople">
+	<ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="mdi-image-filter-drama"></i>First
+      	 <div class="switch pull-right">
+		    <label>
+		      Not All
+		      <input type="checkbox" class="pull-right">
+		      <span class="lever"></span>
+		      All
+		    </label>
+  </div>
+      </div>
+      <div class="collapsible-body">{{#each friend}} <li>{{username}}      	 <div class="switch pull-right person">
+		    <label>
+		      No
+		      <input type="checkbox" class="pull-right checked" id="{{id}}">
+		      <span class="lever"></span>
+		      Yes
+		    </label>
+  </div> </li> {{/each}}</div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="mdi-maps-place"></i>Second</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="mdi-social-whatshot"></i>Third</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+  </ul>
+  <button id="findFriendsBut"> Find Friends </button>
+</template>
